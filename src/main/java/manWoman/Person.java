@@ -1,4 +1,4 @@
-package ManWoman;
+package manWoman;
 
 public class Person {
     protected  String firstName;

@@ -1,7 +1,7 @@
-package ManWoman;
+package manWoman;
 
 public class Man extends Person{
-    public Man(String firstName, String lastName, int age, Boolean partner) {
+    public Man() {
         super(firstName, lastName, age);
     }
 

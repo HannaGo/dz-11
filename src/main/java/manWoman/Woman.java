@@ -1,4 +1,4 @@
-package ManWoman;
+package manWoman;
 
 public class Woman extends Person{
     protected String maidenName;

@@ -1,4 +1,4 @@
-package ManWoman;
+package manWoman;
 
 public class Main {
     public static void main(String[] args) {
