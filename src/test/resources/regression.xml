@@ -1,0 +1,12 @@
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >-->
+<suite name="Tests for hw 9">
+
+    <test name ="testManName">
+        <classes>
+            <class name = "operations.TestTests"/>
+        </classes>
+        <packages>
+            <package name="src.main.java.manwoman"/>
+        </packages>
+    </test>
+</suite>
