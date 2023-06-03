@@ -5,11 +5,27 @@ import manwoman.Woman;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestWomen {
+public class TestWoman {
     @Test
     public void testWomanName(){
 
-        Woman manName = new Woman("Anna", "Gogo", 30);
-        Assert.assertEquals("Anna", "Anna");
+        Woman womanName = new Woman("Anna", "Gogo", 30);
+        Assert.assertEquals(womanName.getFirstName(), "Anna");
+    }
+    @Test
+    public void testWomanLastName(){
+
+        Woman womanLastName = new Woman("Anna", "Gogo", 30);
+        Assert.assertEquals(womanLastName.getLastName(), "Gogo");
+    }
+    @Test
+    public void testWomanRetired(){
+
+        Woman womanRetired = new Woman("Anna", "Gogo", 62);
+        Assert.assertEquals(womanRetired.isRetired(), true);
+    }
+
+    public void testmaidenName(){
+
     }
 }

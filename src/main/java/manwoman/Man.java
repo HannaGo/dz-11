@@ -1,9 +1,11 @@
-package manWoman;
-
+package manwoman;
+//package src.main.java.manwoman;
 public class Man extends Person{
-    public Man() {
-        super(firstName, lastName, age);
-    }
+
+
+//    public Man() {
+//        super(firstName, lastName, age);
+//    }
 
     public Man(String firstName, String lastName, int age) {
         super(firstName, lastName, age);

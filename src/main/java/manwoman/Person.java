@@ -1,11 +1,13 @@
-package manWoman;
+package manwoman;
+
+//package src.main.java.manwoman;
 
 public class Person {
-    protected  String firstName;
-    protected  String lastName;
-    protected  int age;
-    protected  Person partner;
-    protected String maidenName;
+    public  String firstName;
+    public  String lastName;
+    public  int age;
+    public  Person partner;
+    public String maidenName;
 
 
 

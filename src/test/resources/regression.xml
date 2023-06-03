@@ -1,9 +1,9 @@
-<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >-->
-<suite name="Tests for hw 9">
-
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests for hw 19">
     <test name ="testManName">
         <classes>
-            <class name = "operations.TestTests"/>
+            <class name = "operations.TestMan"/>
+            <class name = "operations.TestWoman"/>
         </classes>
         <packages>
             <package name="src.main.java.manwoman"/>
