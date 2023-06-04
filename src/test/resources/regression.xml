@@ -1,12 +1,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Tests for hw 19">
+<!--    <groups>-->
+<!--        <run>-->
+<!--            <include name="OnlyGettersSetters"/>-->
+<!--        </run>-->
+<!--    </groups>-->
     <test name ="testManName">
         <classes>
             <class name = "operations.TestMan"/>
             <class name = "operations.TestWoman"/>
         </classes>
-        <packages>
-            <package name="src.main.java.manwoman"/>
-        </packages>
+<!--        <packages>-->
+<!--            <package name="src.main.java.manwoman"/>-->
+<!--        </packages>-->
+<!--        <packages>-->
+<!--            <package name="src.test.operations"/>-->
+<!--        </packages>-->
     </test>
 </suite>

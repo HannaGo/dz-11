@@ -1,31 +1,45 @@
 package operations;
 
 import manwoman.Man;
+import manwoman.Person;
 import manwoman.Woman;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TestWoman {
+
+    private Woman womantest;
+    @BeforeMethod
+    public void createWomanTest(){
+        womantest = new Woman("Anna", "Gogo", 62);
+    }
+
+    private Man manhusbend;
+    @BeforeMethod
+    public void createManTest(){
+        manhusbend = new Man("Den", "Lynch", 35);
+    }
     @Test
     public void testWomanName(){
 
-        Woman womanName = new Woman("Anna", "Gogo", 30);
-        Assert.assertEquals(womanName.getFirstName(), "Anna");
+        Assert.assertEquals(womantest.getFirstName(), "Anna");
     }
     @Test
     public void testWomanLastName(){
 
-        Woman womanLastName = new Woman("Anna", "Gogo", 30);
-        Assert.assertEquals(womanLastName.getLastName(), "Gogo");
+        Assert.assertEquals(womantest.getLastName(), "Gogo");
     }
     @Test
     public void testWomanRetired(){
 
-        Woman womanRetired = new Woman("Anna", "Gogo", 62);
-        Assert.assertEquals(womanRetired.isRetired(), true);
+        Assert.assertEquals(womantest.isRetired(), true);
     }
 
-    public void testmaidenName(){
+
+    @Test
+    public void testRegistrationPartnership(){
+        Assert.assertEquals(manhusbend.registerPartnership(womantest), );
 
     }
 }

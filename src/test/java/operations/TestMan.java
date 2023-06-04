@@ -5,28 +5,33 @@ package operations;
 import manwoman.Man;
 //import src.main.java.manwoman.Man;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
 
 public class TestMan {
+
+    private Man mantest;
+    @BeforeMethod
+    public void createManTest(){
+        mantest = new Man("Mykola", "Jonsoniuk", 35);
+    }
+
     @Test
     public void testManName(){
 
-        Man manName = new Man("Mykola", "Jonsoniuk", 35);
-        Assert.assertEquals(manName.getFirstName(), "Mykola");
+        Assert.assertEquals(mantest.getFirstName(), "Mykola");
     }
     @Test
     public void testManLastName(){
 
-        Man manLastName = new Man("Mykola", "Jonsoniuk", 35);
-        Assert.assertEquals(manLastName.getLastName(), "Jonsoniuk");
+        Assert.assertEquals(mantest.getLastName(), "Jonsoniuk");
     }
     @Test
     public void testManRetired(){
 
-        Man manRetired = new Man("Mykola", "Jonsoniuk", 35);
-        Assert.assertEquals(manRetired.isRetired(), false);
+        Assert.assertEquals(mantest.isRetired(), false);
     }
 
 //    @Test(dataProvider = "fullname", dataProviderClass = TestDataProvider.class)
