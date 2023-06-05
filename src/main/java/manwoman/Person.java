@@ -2,6 +2,8 @@ package manwoman;
 
 //package src.main.java.manwoman;
 
+import java.util.ArrayList;
+
 public class Person {
     public  String firstName;
     public  String lastName;
@@ -49,12 +51,24 @@ public class Person {
         this.age = age;
     }
 
-    public Person(Person partner) {
+//    public Person(Person partner) {
+//
+//        this.partner = partner;
+//    }
+//
+//    public Person(String maidenName) {
+//        this.maidenName = maidenName;
+//    }
 
+    public ArrayList<Person> registerPartnership(Person partner) {
         this.partner = partner;
-    }
+        partner.partner = this;
+        partner.lastName = this.lastName;
+        ArrayList<Person> partnership = new ArrayList<Person>();
+        partnership.add(this);
+        partnership.add(partner);
 
-    public Person(String maidenName) {
-        this.maidenName = maidenName;
+        return partnership;
+
     }
 }

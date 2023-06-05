@@ -16,11 +16,13 @@ public class Man extends Person{
         return getAge() >= 65;
     }
 
-    public void registerPartnership(Woman partner) {
-        this.partner = partner;
-        partner.partner = this;
-        partner.lastName = this.lastName;
-    }
+//    public void registerPartnership(Woman partner) {
+//        this.partner = partner;
+//        partner.partner = this;
+//        partner.lastName = this.lastName;
+//    }
+
+
 
     public void deregisterPartnership(boolean revertLastName) {
         if (revertLastName && partner != null) {

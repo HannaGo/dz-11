@@ -11,9 +11,6 @@
             <class name = "operations.TestWoman"/>
         </classes>
 <!--        <packages>-->
-<!--            <package name="src.main.java.manwoman"/>-->
-<!--        </packages>-->
-<!--        <packages>-->
 <!--            <package name="src.test.operations"/>-->
 <!--        </packages>-->
     </test>
