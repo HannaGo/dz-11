@@ -21,7 +21,7 @@ public class Main {
         System.out.println(man.firstName + " " + man.lastName + ", age: " + man.age);
         System.out.println(woman.firstName + " " + woman.lastName + ", age: " + woman.age);
 
-        man.deregisterPartnership(true);
+        woman.deregisterPartnership(true);
         System.out.println(man.firstName + " " + man.lastName + ", age: " + man.age);
         System.out.println(woman.firstName + " " + woman.lastName + ", age: " + woman.age);
 
@@ -31,7 +31,7 @@ public class Main {
         System.out.println(man2.firstName + " " + man2.lastName + ", age: " + man2.age);
         System.out.println(woman2.firstName + " " + woman2.lastName + ", age: " + woman2.age);
 
-        man2.deregisterPartnership(true);
+        woman2.deregisterPartnership(true);
         System.out.println(man2.firstName + " " + man2.lastName + ", age: " + man2.age);
         System.out.println(woman2.firstName + " " + woman2.lastName + ", age: " + woman2.age);
 
@@ -41,7 +41,7 @@ public class Main {
         System.out.println(man.firstName + " " + man.lastName + ", age: " + man.age);
         System.out.println(man2.firstName + " " + man2.lastName + ", age: " + man2.age);
 
-        man.deregisterPartnership(true);
+        man2.deregisterPartnership(true);
         System.out.println(man.firstName + " " + man.lastName + ", age: " + man.age);
         System.out.println(man2.firstName + " " + man2.lastName + ", age: " + man2.age);
 
@@ -51,7 +51,7 @@ public class Main {
         System.out.println(woman.firstName + " " + woman.lastName + ", age: " + woman.age);
         System.out.println(woman2.firstName + " " + woman2.lastName + ", age: " + woman2.age);
 
-        woman.deregisterPartnership(true);
+        woman2.deregisterPartnership(true);
         System.out.println(woman.firstName + " " + woman.lastName + ", age: " + woman.age);
         System.out.println(woman2.firstName + " " + woman2.lastName + ", age: " + woman2.age);
 

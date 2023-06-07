@@ -16,7 +16,7 @@ public class Man extends Person{
         return getAge() >= 65;
     }
 
-//    public void registerPartnership(Woman partner) {
+// public void registerPartnership(Woman partner) {
 //        this.partner = partner;
 //        partner.partner = this;
 //        partner.lastName = this.lastName;

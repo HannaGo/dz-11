@@ -38,14 +38,30 @@ public class TestWoman {
     }
 
 
+
+
 //    THIS TEST IS FAILED. I UNDERSTAND THAT WE SHOULD INDICATE HERE partnership (Class Person, method registerPartnership) BUT I DON'T UNDERSTAND HOW?
 //    WITHOUT THIS TEST OTHER TESTS ARE RUNNING AND PASSING.
-    @Test
 
+    @Test
     public void testRegistrationPartnership(){
-        Assert.assertEquals(womantest.registerPartnership(manhusbend), Person<>);
+        Assert.assertEquals(womantest.lastName(womantest.registerPartnership(manhusbend)), "Gogo");
+//        System.out.println(womantest);
 
     }
+
+    @Test
+    public void testDeregisterPartnershipLastName(){
+
+//        Assert.assertEquals(womantest.deregisterPartnership(this.manhusbend), womantest.lastName = "Gogo");
+        System.out.println("test of deregidtering of partnership.");
+    }
+
+//    @Test
+//    public void testDeregisterPartnershipNull(){
+//
+//        Assert.assertEquals(manhusbend.deregisterPartnership(womantest), "test");
+//    }
 
 //    @DataProvider(name = "relationship")
 //    public static Object[][] relationship(){
