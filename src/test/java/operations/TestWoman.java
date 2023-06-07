@@ -47,7 +47,6 @@ public class TestWoman {
     public void testRegistrationPartnership(){
         Assert.assertEquals(womantest.lastName(womantest.registerPartnership(manhusbend)), "Gogo");
 //        System.out.println(womantest);
-
     }
 
     @Test
